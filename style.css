@@ -1,0 +1,258 @@
+﻿:root {
+  --bg: #f2eef7;
+  --bg-2: #ede8f4;
+  --text: #2f2f38;
+  --subtext: #666779;
+  --white: #ffffff;
+  --line: #ececf3;
+  --primary: #6b7fff;
+  --primary-hover: #5a6ef0;
+  --chip: #eef1ff;
+  --shadow-lg: 0 18px 42px rgba(41, 30, 75, 0.13);
+  --shadow-sm: 0 8px 20px rgba(41, 30, 75, 0.08);
+  --radius-xl: 24px;
+  --radius-lg: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  font-family: "Comic Sans MS", "Trebuchet MS", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  background:
+    radial-gradient(circle at 5% 8%, #ffffffa0 0, transparent 20%),
+    radial-gradient(circle at 90% 5%, #ffffff85 0, transparent 24%),
+    linear-gradient(180deg, var(--bg), var(--bg-2));
+  min-height: 100vh;
+}
+
+.page {
+  width: min(1000px, 92vw);
+  margin: 0 auto;
+  padding: 20px 0 110px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.hero__title {
+  margin: 0;
+  font-size: clamp(1.7rem, 6vw, 2.7rem);
+  line-height: 1.2;
+}
+
+.hero__icon {
+  display: inline-block;
+  margin-right: 6px;
+  transform: translateY(-1px);
+}
+
+.hero__desc {
+  margin: 10px auto 0;
+  max-width: 700px;
+  color: var(--subtext);
+  font-size: 0.97rem;
+}
+
+.panel {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  padding: 16px;
+}
+
+.panel__head h2 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.panel__head p {
+  margin: 6px 0 0;
+  color: var(--subtext);
+  font-size: 0.93rem;
+}
+
+.weeks-list {
+  display: grid;
+  gap: 10px;
+}
+
+.week-card {
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 12px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  align-items: center;
+  transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease;
+}
+
+.week-card:hover,
+.week-card:focus-visible {
+  transform: translateY(-2px);
+  border-color: #cdd4f7;
+  box-shadow: 0 12px 24px rgba(58, 71, 125, 0.16);
+  outline: none;
+}
+
+.week-card__icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: #f7f8ff;
+  font-size: 1.2rem;
+}
+
+.week-card__title {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.week-card__desc {
+  margin: 4px 0 0;
+  color: var(--subtext);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.week-card__meta {
+  display: grid;
+  justify-items: end;
+  gap: 6px;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: #4250a8;
+  background: var(--chip);
+  border-radius: 999px;
+  padding: 3px 8px;
+}
+
+.empty-state {
+  margin: 14px 0 4px;
+  text-align: center;
+  color: var(--subtext);
+  padding: 16px 10px;
+  border: 1px dashed #d5d9ea;
+  border-radius: 12px;
+  background: #fbfcff;
+}
+
+/* 底部小提示 */
+.tip {
+  position: fixed;
+  right: 10px;
+  left: 10px;
+  bottom: 10px;
+  background: #ffffff;
+  border: 1px solid #dde1f2;
+  box-shadow: var(--shadow-lg);
+  border-radius: 14px;
+  padding: 10px 12px 12px;
+  max-width: 430px;
+  margin: 0 auto;
+  z-index: 20;
+}
+
+.tip__close {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  border: none;
+  background: transparent;
+  color: #8a8ca0;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.tip__toggle {
+  border: none;
+  background: #f5f7ff;
+  color: #38408f;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 0.84rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tip__body {
+  margin-top: 9px;
+  font-size: 0.85rem;
+  color: #55586b;
+  line-height: 1.45;
+}
+
+.tip__body h3 {
+  margin: 0 0 5px;
+  color: #2f3363;
+  font-size: 0.95rem;
+}
+
+.tip__body p {
+  margin: 4px 0;
+}
+
+.tip--collapsed .tip__body {
+  display: none;
+}
+
+.tip--hidden {
+  display: none;
+}
+
+.tip-reset {
+  position: fixed;
+  right: 10px;
+  bottom: 12px;
+  z-index: 20;
+  border: 1px solid #d6dcf7;
+  background: #ffffff;
+  color: #38408f;
+  border-radius: 999px;
+  padding: 7px 12px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+}
+
+.tip-reset--hidden {
+  display: none;
+}
+
+@media (min-width: 760px) {
+  .page {
+    padding-top: 26px;
+  }
+
+  .panel {
+    padding: 20px;
+  }
+
+  .tip {
+    left: auto;
+    right: 16px;
+    bottom: 16px;
+    width: min(430px, 90vw);
+    display: none;
+  }
+
+  .tip-reset {
+    display: none;
+  }
+}

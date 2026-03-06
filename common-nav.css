@@ -1,0 +1,52 @@
+﻿.tb-common-nav {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 2147483000;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 42px;
+  padding: 10px 14px;
+
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(3px);
+
+  color: #334155;
+  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+
+  box-shadow: 0 8px 22px rgba(51, 65, 85, 0.16);
+  transition: transform 0.16s ease, box-shadow 0.16s ease, background-color 0.16s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.tb-common-nav:hover,
+.tb-common-nav:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(51, 65, 85, 0.22);
+  background: rgba(255, 255, 255, 0.98);
+  outline: none;
+}
+
+.tb-common-nav:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 767px) {
+  .tb-common-nav {
+    top: 10px;
+    left: 10px;
+    min-height: 40px;
+    padding: 9px 12px;
+    font-size: 14px;
+  }
+}

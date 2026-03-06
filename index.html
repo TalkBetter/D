@@ -1,0 +1,58 @@
+﻿<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>課程導覽頁</title>
+  <meta name="description" content="國小英文課程週次導覽頁（Week 10~16）" />
+
+  <!-- favicon 預留 -->
+  <!-- <link rel="icon" href="./favicon.ico" /> -->
+
+  <!-- PWA / manifest 預留 -->
+  <!-- <link rel="manifest" href="./manifest.webmanifest" /> -->
+  <!-- <meta name="theme-color" content="#f1edf7" /> -->
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <h1 class="hero__title">
+        <span class="hero__icon" aria-hidden="true">📚</span>
+        <span id="heroTitleText">10-16週 導覽頁</span>
+      </h1>
+      <p id="heroDescText" class="hero__desc">快速進入每週課程內容，依週次整理，方便學生與家長使用。</p>
+    </header>
+
+    <section class="panel">
+      <div class="panel__head">
+        <div>
+          <h2 id="sectionTitleText">每週課程 Weeks</h2>
+          <p id="sectionDescText">依週學習主題與文法，完整課程內容</p>
+        </div>
+      </div>
+
+      <div id="weeksList" class="weeks-list" aria-live="polite"></div>
+      <p id="emptyState" class="empty-state" hidden>目前沒有課程</p>
+    </section>
+  </main>
+
+  <!-- 可收合 / 可關閉的桌面捷徑提示 -->
+  <aside id="homescreenTip" class="tip" aria-label="桌面捷徑提示">
+    <button id="tipClose" class="tip__close" type="button" aria-label="關閉提示">✕</button>
+    <button id="tipToggle" class="tip__toggle" type="button" aria-expanded="true">
+      📱 可加入桌面捷徑
+    </button>
+    <div id="tipBody" class="tip__body">
+      <h3>小提示</h3>
+      <p>iPhone / iPad：在 Safari 點分享，再選「加入主畫面」</p>
+      <p>Android：在 Chrome 點右上角選單，再選「加入主畫面」或「安裝應用程式」</p>
+    </div>
+  </aside>
+  <button id="tipReset" class="tip-reset tip-reset--hidden" type="button">顯示捷徑提示</button>
+
+  <script src="./data.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
