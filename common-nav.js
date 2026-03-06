@@ -2,7 +2,7 @@
   "use strict";
 
   var NAV_ID = "tb-common-nav-link";
-  var NAV_HREF = "https://talkbetter.github.io/D/Index.html";
+  var NAV_HREF = "https://talkbetter.github.io/D/index.html";
   var NAV_TEXT = "← 回導覽頁";
 
   function isElementInDOM(id) {
