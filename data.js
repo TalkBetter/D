@@ -17,7 +17,7 @@ window.COURSE_WEEKS = [
     title: "Week 3",
     description: "Seeds & Plants（種子與植物）。",
     url: "https://talkbetter.github.io/D3/",
-    tag: "" 
+    tag: ["句型"] 
   },
   {
     id: "w4",
@@ -25,7 +25,7 @@ window.COURSE_WEEKS = [
     icon: "🌴",
     title: "Week 4",
     description: "植物句型 + CH發音 + 過去式不規則動詞",
-    url: "https://talkbetter.github.io/W11/",
+    url: "https://talkbetter.github.io/D4/",
     tag: ["發音", "文法", "句型"]
   }
 ];

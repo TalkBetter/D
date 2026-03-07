@@ -52,7 +52,17 @@
       <p>Android：在 Chrome 點右上角選單，再選「加入主畫面」或「安裝應用程式」</p>
     </div>
   </aside>
-  <script src="./data.js"></script>
-  <script src="./script.js"></script>
+  <script>
+    (function () {
+      var dataScript = document.createElement("script");
+      dataScript.src = "./data.js?v=" + Date.now();
+      dataScript.onload = function () {
+        var appScript = document.createElement("script");
+        appScript.src = "./script.js";
+        document.body.appendChild(appScript);
+      };
+      document.body.appendChild(dataScript);
+    })();
+  </script>
 </body>
 </html>
