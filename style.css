@@ -166,69 +166,6 @@ body {
   background: #fbfcff;
 }
 
-/* 底部小提示 */
-.tip {
-  position: fixed;
-  right: 10px;
-  left: 10px;
-  bottom: 10px;
-  background: #ffffff;
-  border: 1px solid #dde1f2;
-  box-shadow: var(--shadow-lg);
-  border-radius: 14px;
-  padding: 10px 12px 12px;
-  max-width: 430px;
-  margin: 0 auto;
-  z-index: 20;
-}
-
-.tip__close {
-  position: absolute;
-  right: 7px;
-  top: 7px;
-  border: none;
-  background: transparent;
-  color: #8a8ca0;
-  font-size: 0.95rem;
-  cursor: pointer;
-}
-
-.tip__toggle {
-  border: none;
-  background: #f5f7ff;
-  color: #38408f;
-  border-radius: 999px;
-  padding: 8px 12px;
-  font-size: 0.95rem;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.tip__body {
-  margin-top: 9px;
-  font-size: 0.98rem;
-  color: #55586b;
-  line-height: 1.45;
-}
-
-.tip__body h3 {
-  margin: 0 0 5px;
-  color: #2f3363;
-  font-size: 1.08rem;
-}
-
-.tip__body p {
-  margin: 4px 0;
-}
-
-.tip--collapsed .tip__body {
-  display: none;
-}
-
-.tip--hidden {
-  display: none;
-}
-
 @media (min-width: 760px) {
   .page {
     padding-top: 26px;
@@ -244,14 +181,6 @@ body {
 
   .week-card__desc {
     font-size: 0.98rem;
-  }
-
-  .tip {
-    left: auto;
-    right: 16px;
-    bottom: 16px;
-    width: min(430px, 90vw);
-    display: none;
   }
 }
 

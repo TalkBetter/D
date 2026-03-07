@@ -6,17 +6,11 @@
   const sectionTitleTextEl = document.getElementById("sectionTitleText");
   const sectionDescTextEl = document.getElementById("sectionDescText");
 
-  const tipEl = document.getElementById("homescreenTip");
-  const tipToggleEl = document.getElementById("tipToggle");
-  const tipCloseEl = document.getElementById("tipClose");
-
   const pageConfig = window.PAGE_CONFIG || {};
   const sourceData = Array.isArray(window.COURSE_WEEKS) ? window.COURSE_WEEKS.slice() : [];
 
   function init() {
     applyPageConfig();
-    bindEvents();
-    setupTip();
     render();
   }
 
@@ -38,44 +32,6 @@
       sectionDescTextEl.textContent =
         pageConfig.sectionDescription !== undefined ? String(pageConfig.sectionDescription) : " ";
     }
-  }
-
-  function bindEvents() {
-    if (tipToggleEl && tipEl) {
-      tipToggleEl.addEventListener("click", function () {
-        const collapsed = tipEl.classList.toggle("tip--collapsed");
-        tipToggleEl.setAttribute("aria-expanded", String(!collapsed));
-      });
-    }
-
-    if (tipCloseEl && tipEl) {
-      tipCloseEl.addEventListener("click", function () {
-        tipEl.classList.add("tip--hidden");
-        localStorage.setItem("homescreen_tip_closed", "1");
-      });
-    }
-
-    window.addEventListener("resize", setupTip);
-  }
-
-  function setupTip() {
-    if (!tipEl) return;
-    const isDesktop = window.matchMedia("(min-width: 760px)").matches;
-
-    if (isDesktop) {
-      tipEl.classList.add("tip--hidden");
-      return;
-    }
-
-    const closed = localStorage.getItem("homescreen_tip_closed") === "1";
-    if (closed) {
-      tipEl.classList.add("tip--hidden");
-    } else {
-      tipEl.classList.remove("tip--hidden");
-    }
-
-    tipEl.classList.remove("tip--collapsed");
-    if (tipToggleEl) tipToggleEl.setAttribute("aria-expanded", "true");
   }
 
   function render() {
