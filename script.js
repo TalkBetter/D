@@ -7,10 +7,8 @@
   const sectionDescTextEl = document.getElementById("sectionDescText");
 
   const tipEl = document.getElementById("homescreenTip");
-  const tipBodyEl = document.getElementById("tipBody");
   const tipToggleEl = document.getElementById("tipToggle");
   const tipCloseEl = document.getElementById("tipClose");
-  const tipResetEl = document.getElementById("tipReset");
 
   const pageConfig = window.PAGE_CONFIG || {};
   const sourceData = Array.isArray(window.COURSE_WEEKS) ? window.COURSE_WEEKS.slice() : [];
@@ -43,26 +41,17 @@
   }
 
   function bindEvents() {
-    if (tipToggleEl) {
+    if (tipToggleEl && tipEl) {
       tipToggleEl.addEventListener("click", function () {
         const collapsed = tipEl.classList.toggle("tip--collapsed");
         tipToggleEl.setAttribute("aria-expanded", String(!collapsed));
       });
     }
 
-    if (tipCloseEl) {
+    if (tipCloseEl && tipEl) {
       tipCloseEl.addEventListener("click", function () {
         tipEl.classList.add("tip--hidden");
         localStorage.setItem("homescreen_tip_closed", "1");
-        showTipResetButton();
-      });
-    }
-
-    if (tipResetEl) {
-      tipResetEl.addEventListener("click", function () {
-        localStorage.removeItem("homescreen_tip_closed");
-        tipEl.classList.remove("tip--hidden");
-        hideTipResetButton();
       });
     }
 
@@ -75,32 +64,18 @@
 
     if (isDesktop) {
       tipEl.classList.add("tip--hidden");
-      hideTipResetButton();
       return;
     }
 
     const closed = localStorage.getItem("homescreen_tip_closed") === "1";
     if (closed) {
       tipEl.classList.add("tip--hidden");
-      showTipResetButton();
     } else {
       tipEl.classList.remove("tip--hidden");
-      hideTipResetButton();
     }
 
     tipEl.classList.remove("tip--collapsed");
     if (tipToggleEl) tipToggleEl.setAttribute("aria-expanded", "true");
-    if (!tipBodyEl) return;
-  }
-
-  function showTipResetButton() {
-    if (!tipResetEl) return;
-    tipResetEl.classList.remove("tip-reset--hidden");
-  }
-
-  function hideTipResetButton() {
-    if (!tipResetEl) return;
-    tipResetEl.classList.add("tip-reset--hidden");
   }
 
   function render() {
@@ -113,7 +88,6 @@
     }
 
     if (emptyEl) emptyEl.hidden = true;
-    // 依 data.js 的陣列順序顯示，方便在資料檔直接維護排序
     listEl.innerHTML = sourceData.map(buildCardHTML).join("");
   }
 
@@ -121,7 +95,16 @@
     const icon = escapeHtml(item.icon || "📘");
     const title = escapeHtml(item.title || ("Week " + (item.week ?? "")));
     const desc = escapeHtml(item.description || "");
-    const tag = item.tag ? `<span class="tag">${escapeHtml(item.tag)}</span>` : "";
+    const tagValues = Array.isArray(item.tag)
+      ? item.tag
+      : item.tag
+        ? [item.tag]
+        : [];
+    const tag = tagValues
+      .map(function (value) {
+        return `<span class="tag">${escapeHtml(value)}</span>`;
+      })
+      .join(" ");
     const url = encodeURI(item.url || "#");
 
     return `

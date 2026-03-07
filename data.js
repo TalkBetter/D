@@ -13,64 +13,19 @@ window.COURSE_WEEKS = [
   {
     id: "w3",
     week: 3,
-    icon: "🧠",
+    icon: "🌱",
     title: "Week 3",
     description: "Seeds & Plants（種子與植物）。",
     url: "https://talkbetter.github.io/D3/",
-  
+    tag: "" 
   },
   {
-    id: "w11",
-    week: 11,
-    icon: "🧑‍🚒",
-    title: "Week 11",
-    description: "認識社區幫手，練習「是誰」與「使用的工具」。",
+    id: "w4",
+    week: 4,
+    icon: "🌴",
+    title: "Week 4",
+    description: "植物句型 + CH發音 + 過去式不規則動詞",
     url: "https://talkbetter.github.io/W11/",
-    tag: "社區"
-  },
-  {
-    id: "w12",
-    week: 12,
-    icon: "🔤",
-    title: "Week 12",
-    description: "社區幫手句型練習，Long e。",
-    url: "https://talkbetter.github.io/W12/",
-    tag: "發音"
-  },
-  {
-    id: "w13",
-    week: 13,
-    icon: "🧩",
-    title: "Week 13",
-    description: "使用 first / next / then / last 描述事情步驟。",
-    url: "https://talkbetter.github.io/W13/",
-    tag: "流程"
-  },
-  {
-    id: "w14",
-    week: 14,
-    icon: "🍎",
-    title: "Week 14",
-    description: "i_e 發音、健康習慣、because 句型。",
-    url: "https://talkbetter.github.io/W14/",
-    tag: "健康"
-  },
-  {
-    id: "w15",
-    week: 15,
-    icon: "✍️",
-    title: "Week 15",
-    description: "英文基本詞性、健康食物閱讀與寫作，學習形容詞與說明原因。",
-    url: "https://talkbetter.github.io/W15/",
-    tag: "寫作"
-  },
-  {
-    id: "w16",
-    week: 16,
-    icon: "🌟",
-    title: "Week 16",
-    description: "總複習與成果展示，統整本階段學習內容。",
-    url: "https://talkbetter.github.io/W16/",
-    tag: "成果"
+    tag: ["發音", "文法", "句型"]
   }
 ];
