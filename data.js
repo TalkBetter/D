@@ -1,7 +1,7 @@
 ﻿/* 頁面設定：可在這裡維護標題與說明文字 */
 window.PAGE_CONFIG = {
-  documentTitle: "3-4週 導覽頁",
-  heroTitle: "3-4週 導覽頁",
+  documentTitle: "二愛下 TalkBetter",
+  heroTitle: "二愛下 TalkBetter",
   heroDescription: "",
   sectionTitle: "每週課程 Weeks",
   sectionDescription: ""
