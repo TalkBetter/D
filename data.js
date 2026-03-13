@@ -31,7 +31,7 @@ window.COURSE_WEEKS = [
   {
     id: "w5",
     week: 5,
-    icon: "🌴",
+    icon: "🌿",
     title: "Week 5",
     description: "植物句型 + 遊戲連結 + 現在進行式",
     url: "https://talkbetter.github.io/D5/",
