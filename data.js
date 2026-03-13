@@ -27,5 +27,16 @@ window.COURSE_WEEKS = [
     description: "植物句型 + CH發音 + 過去式不規則動詞",
     url: "https://talkbetter.github.io/D4/",
     tag: ["發音", "文法", "句型"]
-  }
+  },
+  {
+    id: "w5",
+    week: 5,
+    icon: "🌴",
+    title: "Week 5",
+    description: "植物句型 + 遊戲連結 + 現在進行式",
+    url: "https://talkbetter.github.io/D5/",
+    tag: ["句型", "遊戲"]
+  }  
+  
+  
 ];
