@@ -40,7 +40,7 @@ window.COURSE_WEEKS = [
   {
     id: "w6",
     week: 6,
-    icon: "🌴",
+    icon: "📝",
     title: "Week 6",
     description: "常見字 & Adjectives & 植物～大自然的小幫手",
     url: "https://talkbetter.github.io/D6/",
