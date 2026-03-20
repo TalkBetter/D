@@ -36,7 +36,15 @@ window.COURSE_WEEKS = [
     description: "植物句型 + 遊戲連結 + 現在進行式",
     url: "https://talkbetter.github.io/D5/",
     tag: ["句型", "遊戲"]
+  },  
+  {
+    id: "w6",
+    week: 6,
+    icon: "🌴",
+    title: "Week 6",
+    description: "常見字 & Adjectives & 植物～大自然的小幫手",
+    url: "https://talkbetter.github.io/D6/",
+    tag: ["形容詞影片"]
   }  
-  
   
 ];
