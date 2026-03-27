@@ -45,6 +45,23 @@ window.COURSE_WEEKS = [
     description: "常見字 & Adjectives & 植物～大自然的小幫手",
     url: "https://talkbetter.github.io/D6/",
     tag: ["形容詞影片"]
+  },  
+  {
+    id: "w7",
+    week: 7,
+    icon: "📝",
+    title: "The Sunflower",
+    description: "Interactive English Learning • 互動英文學習",
+    url: "https://talkbetter.github.io/D7/The Sunflower.html",
+    tag: ["互動英文學習"]
+  },  
+  {
+    id: "w7",
+    week: 7,
+    icon: "📝",
+    title: "Week 7",
+    description: "Week 7: The Sunflower",
+    url: "https://talkbetter.github.io/D7/",
+    tag: [""]
   }  
-  
 ];
