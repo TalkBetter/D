@@ -49,7 +49,7 @@ window.COURSE_WEEKS = [
   {
     id: "w7",
     week: 7,
-    icon: "📝",
+    icon: "🌻",
     title: "The Sunflower",
     description: "Interactive English Learning • 互動英文學習",
     url: "https://talkbetter.github.io/D7/The Sunflower.html",
@@ -58,7 +58,7 @@ window.COURSE_WEEKS = [
   {
     id: "w7",
     week: 7,
-    icon: "📝",
+    icon: "📚",
     title: "Week 7",
     description: "Week 7: The Sunflower",
     url: "https://talkbetter.github.io/D7/",
