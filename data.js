@@ -63,5 +63,14 @@ window.COURSE_WEEKS = [
     description: "Week 7: The Sunflower",
     url: "https://talkbetter.github.io/D7/",
     tag: [""]
+  },
+  {
+    id: "w8",
+    week: 8,
+    icon: "🌸",
+    title: "Week 8",
+    description: "Week 8: 植物描述、形容詞練習、植物單字",
+    url: "https://talkbetter.github.io/D8/",
+    tag: [""]
   }  
 ];
