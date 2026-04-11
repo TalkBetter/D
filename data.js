@@ -72,5 +72,14 @@ window.COURSE_WEEKS = [
     description: "Week 8: 植物描述、形容詞練習、植物單字",
     url: "https://talkbetter.github.io/D8/",
     tag: [""]
+  },
+  {
+    id: "w9",
+    week: 9,
+    icon: "🪴",
+    title: "Week 9",
+    description: "Week 9: 好餓的植物 Harold、自然發音：u_e、o_e",
+    url: "https://talkbetter.github.io/D9/",
+    tag: [""]
   }  
 ];
