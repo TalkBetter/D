@@ -81,5 +81,14 @@ window.COURSE_WEEKS = [
     description: "Week 9: 好餓的植物 Harold、自然發音：u_e、o_e",
     url: "https://talkbetter.github.io/D9/",
     tag: [""]
+  },  
+  {
+    id: "w10",
+    week: 10,
+    icon: "🪴",
+    title: "Exam Practice",
+    description: "考題內容複習 、 短文 Venus the Flytrap",
+    url: "https://talkbetter.github.io/D10/",
+    tag: [""]
   }  
 ];
