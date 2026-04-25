@@ -90,5 +90,14 @@ window.COURSE_WEEKS = [
     description: "考題內容複習 、 短文 Venus the Flytrap",
     url: "https://talkbetter.github.io/D10/",
     tag: [""]
+  },  
+  {
+    id: "w11",
+    week: 11,
+    icon: "👅",
+    title: "Week 11",
+    description: "練習味覺、then，還有感官句型",
+    url: "https://talkbetter.github.io/D11/",
+    tag: [""]
   }  
 ];
