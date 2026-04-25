@@ -85,7 +85,7 @@ window.COURSE_WEEKS = [
   {
     id: "w10",
     week: 10,
-    icon: "🪴",
+    icon: "⭐",
     title: "Exam Practice",
     description: "考題內容複習 、 短文 Venus the Flytrap",
     url: "https://talkbetter.github.io/D10/",
