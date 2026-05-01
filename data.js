@@ -99,5 +99,14 @@ window.COURSE_WEEKS = [
     description: "練習味覺、then，還有感官句型",
     url: "https://talkbetter.github.io/D11/",
     tag: [""]
+  } ,  
+  {
+    id: "w12",
+    week: 12,
+    icon: "✋",
+    title: "Week 12",
+    description: "his/her 文法觸摸與感覺。",
+    url: "https://talkbetter.github.io/D12/",
+    tag: [""]
   }  
 ];
