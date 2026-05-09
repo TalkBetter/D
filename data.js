@@ -117,5 +117,14 @@ window.COURSE_WEEKS = [
     description: "五感例句",
     url: "https://talkbetter.github.io/D13/",
     tag: [""]
-  }    
+  },  
+  {
+    id: "w13_",
+    week: 13,
+    icon: "🎮",
+    title: "太空單字射擊遊戲",
+    description: "A冠王 7-13周",
+    url: "https://talkbetter.github.io/D13/shooting-game.html",
+    tag: [""]
+  }        
 ];
