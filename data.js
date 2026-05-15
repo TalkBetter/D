@@ -126,5 +126,14 @@ window.COURSE_WEEKS = [
     description: "A冠王 7-13周",
     url: "https://talkbetter.github.io/D13/shooting-game.html",
     tag: [""]
-  }        
+  },  
+  {
+    id: "w14_",
+    week: 14,
+    icon: "🎯",
+    title: "Week 11~13 複習",
+    description: "例句中翻英練習",
+    url: "https://talkbetter.github.io/D14/index.html",
+    tag: [""]
+  }           
 ];
