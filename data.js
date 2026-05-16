@@ -125,15 +125,15 @@ window.COURSE_WEEKS = [
     title: "太空單字射擊遊戲",
     description: "A冠王 7-13周",
     url: "https://talkbetter.github.io/D13/shooting-game.html",
-    tag: [""]
+    tag: ["遊戲"]
   },  
   {
     id: "w14_",
     week: 14,
     icon: "🎯",
-    title: "Week 11~13 複習",
-    description: "例句中翻英練習",
+    title: "Week 14",
+    description: "Week 11~13 複習",
     url: "https://talkbetter.github.io/D14/index.html",
-    tag: [""]
+    tag: ["中翻英", "單字"]
   }           
 ];
