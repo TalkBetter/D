@@ -128,12 +128,21 @@ window.COURSE_WEEKS = [
     tag: ["遊戲"]
   },  
   {
-    id: "w14_",
+    id: "w14",
     week: 14,
     icon: "🎯",
     title: "Week 14",
     description: "Week 11~13 複習",
     url: "https://talkbetter.github.io/D14/index.html",
     tag: ["中翻英", "單字"]
-  }           
+  },  
+  {
+    id: "w15",
+    week: 15,
+    icon: "🐜",
+    title: "Week 15 ",
+    description: "螞蟻部位、短文、主題句型、遊戲 ",
+    url: "https://talkbetter.github.io/D15/index.html",
+    tag: ["句型","文法", "遊戲"]
+  }             
 ];
