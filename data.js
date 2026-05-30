@@ -144,5 +144,14 @@ window.COURSE_WEEKS = [
     description: "螞蟻部位、短文、主題句型、遊戲 ",
     url: "https://talkbetter.github.io/D15/index.html",
     tag: ["句型","文法", "遊戲"]
-  }             
+  },  
+  {
+    id: "w16",
+    week: 16,
+    icon: "🐞",
+    title: "Week 16 ",
+    description: "螞蟻複習、螞蟻瓢蟲比較、遊戲 ",
+    url: "https://talkbetter.github.io/D16/index.html",
+    tag: ["句型", "遊戲"]
+  }     
 ];
