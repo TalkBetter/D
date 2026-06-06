@@ -153,5 +153,23 @@ window.COURSE_WEEKS = [
     description: "螞蟻複習、螞蟻瓢蟲比較、遊戲 ",
     url: "https://talkbetter.github.io/D16/index.html",
     tag: ["句型", "遊戲"]
-  }     
+  },
+  {
+    id: "w17",
+    week: 17,
+    icon: "🦋",
+    title: "Week 17 ",
+    description: "螞蟻、瓢蟲複習 蝴蝶句型 連接詞文法",
+    url: "https://talkbetter.github.io/D17/index.html",
+    tag: ["句型", "文法"]
+  },
+  {
+    id: "w17",
+    week: 17,
+    icon: "📚",
+    title: "W3-W17 單字複習app ",
+    description: "來源:鄭老師整理的 3-17週單字表 ",
+    url: "https://talkbetter.github.io/D17/vocab-review.html",
+    tag: []
+  }
 ];
