@@ -171,5 +171,24 @@ window.COURSE_WEEKS = [
     description: "來源:鄭老師整理的 3-17週單字表 ",
     url: "https://talkbetter.github.io/D17/vocab-review.html",
     tag: []
+  },
+  {
+    id: "w18",
+    week: 18,
+    icon: "🐝",
+    title: "Week 15~17 複習 ",
+    description: "螞蟻 瓢蟲 蝴蝶 ",
+    url: "https://talkbetter.github.io/D18/index.html",
+    tag: []
+  }
+  ,
+  {
+    id: "w18",
+    week: 18,
+    icon: "🐝",
+    title: "本學期48個高頻單字選字練習",
+    description: "48個HFW句子選字",
+    url: "https://talkbetter.github.io/D18/hfw-all-in-one.html",
+    tag: []
   }
 ];
