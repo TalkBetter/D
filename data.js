@@ -173,11 +173,20 @@ window.COURSE_WEEKS = [
     tag: []
   },
   {
+    id: "w14",
+    week: 14,
+    icon: "🐝",
+    title: "Week 11~13 複習  (內容與14週相同)",
+    description: "複習 1",
+    url: "https://talkbetter.github.io/D14/index.html",
+    tag: [""]
+  },
+  {
     id: "w18",
     week: 18,
     icon: "🐝",
     title: "Week 15~17 複習 ",
-    description: "螞蟻 瓢蟲 蝴蝶 ",
+    description: "複習 2 ",
     url: "https://talkbetter.github.io/D18/index.html",
     tag: []
   }
