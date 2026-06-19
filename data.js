@@ -194,7 +194,7 @@ window.COURSE_WEEKS = [
   {
     id: "w18",
     week: 18,
-    icon: "🐝",
+    icon: "⭐",
     title: "Part A Practice",
     description: "48個HFW句子選字",
     url: "https://talkbetter.github.io/D19/hfw-all-in-one-answercheck.html",
