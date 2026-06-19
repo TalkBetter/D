@@ -195,9 +195,21 @@ window.COURSE_WEEKS = [
     id: "w18",
     week: 18,
     icon: "🐝",
-    title: "本學期48個高頻單字選字練習",
+    title: "Part A Practice",
     description: "48個HFW句子選字",
-    url: "https://talkbetter.github.io/D18/hfw-all-in-one.html",
+    url: "https://talkbetter.github.io/D19/hfw-all-in-one-answercheck.html",
     tag: []
   }
+   ,
+  {
+    id: "w18",
+    week: 19,
+    icon: "⭐",
+    title: "Exam Practice",
+    description: "Part B C D",
+    url: "https://talkbetter.github.io/D19/index.html",
+    tag: []
+  } 
+  
+ 
 ];
